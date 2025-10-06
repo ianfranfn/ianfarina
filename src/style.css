@@ -74,7 +74,7 @@ nav ul {
 /* --- Estilos de la sección Proyectos --- */
 #proyectos {
     padding: 4rem 2rem;
-    background-color: #f4f4f9; /* Mismo fondo claro que el body */
+    background-color: #f4f4f9; 
 }
 
 #proyectos h2 {
@@ -85,7 +85,7 @@ nav ul {
 
 .proyectos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Rejilla responsive */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -94,13 +94,13 @@ nav ul {
 .proyecto-card {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    overflow: hidden; /* Asegura que la imagen no se salga de los bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .proyecto-card:hover {
-    transform: translateY(-5px); /* Efecto de levantar la tarjeta */
+    transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
