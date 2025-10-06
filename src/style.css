@@ -6,7 +6,7 @@ body {
 }
 
 a {
-    text-decoration: none; /* Quitamos el subrayado de los enlaces */
+    text-decoration: none;
     color: inherit;
 }
 
@@ -29,7 +29,24 @@ nav {
 
 nav .logo {
     font-size: 1.5rem;
+    margin-left: 5vw;
+    margin-top: -2vw;
+    margin-bottom: -2vw;
+    padding: 1rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.6rem;
     font-weight: bold;
+    border: 2px solid black;
+    border-radius: 2rem;
+}
+
+nav .logo:hover {
+    background-color: #6a3093;
+    transform: scale(1.05);
+    color: white;
+    transition: transform 0.5s, background-color 0.5s, color 0.5s, margin-top 0.5s, margin-bottom 0.5s; 
+    margin-top: -1.5vw;
+    margin-bottom: -1.5vw;
 }
 
 nav ul {
@@ -43,7 +60,7 @@ nav ul {
 /* --- Estilos de la sección Hero --- */
 #hero {
     text-align: center;
-    padding: 6rem 2rem;
+    padding: 6rem 2vw;
     background-color: #fff;
 }
 
