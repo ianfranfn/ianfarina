@@ -1,8 +1,12 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     background-color: #f4f4f9;
     color: #333; 
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 a {
@@ -33,6 +37,7 @@ nav {
 }
 
 nav .logo {
+    font-family: sans-serif;
     font-size: 1.5rem;
     margin-left: 5vw;
     margin-top: -0.5vw;
@@ -52,6 +57,7 @@ nav .logo:hover {
     transition: transform 0.5s, background-color 0.5s, color 0.5s, margin-top 0.5s, margin-bottom 0.5s; 
     margin-top: -1.5vw;
     margin-bottom: -1.5vw;
+    text-decoration: none;
 
     @media screen and (min-width: 992px) {
         margin-top: 0.5vw;
@@ -69,6 +75,18 @@ nav ul {
 }
 
 /* --- Estilos de la sección Hero --- */
+
+.hidden {
+    opacity: 0;
+    transform: translateY(30px); /* Empieza un poco más abajo */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 #hero {
     text-align: center;
     padding: 6rem 2vw;
