@@ -78,7 +78,7 @@ nav ul {
 
 .hidden {
     opacity: 0;
-    transform: translateY(30px); /* Empieza un poco más abajo */
+    transform: translateY(30px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
@@ -226,7 +226,7 @@ nav ul {
 .sobre-mi-texto h3 {
     font-size: 1.5rem;
     margin-top: 2rem;
-    border-left: 4px solid #6a3093; /* Detalle de color para el subtítulo */
+    border-left: 4px solid #6a3093; 
     padding-left: 1rem;
 }
 
@@ -260,8 +260,8 @@ nav ul {
 
 /* --- Estilos de la sección Contacto --- */
 #contacto {
-    background-color: #6a3093; /* Usamos el color principal para el fondo */
-    color: #fff; /* Texto blanco para que contraste */
+    background-color: #6a3093; 
+    color: #fff; 
     text-align: center;
     padding: 6rem 2rem;
 }
@@ -277,7 +277,6 @@ nav ul {
     margin: 1rem auto 2rem;
 }
 
-/* Reutilizamos el estilo .cta-button pero le cambiamos el color de fondo para que destaque */
 #contacto .cta-button {
     background-color: #fff;
     color: #6a3093;
@@ -285,9 +284,8 @@ nav ul {
 }
 
 #contacto .cta-button:hover {
-    background-color: #f4f4f9; /* Un leve cambio de color al pasar el mouse */
+    background-color: #f4f4f9; 
 }
-
 
 /* --- Estilos del Footer --- */
 footer {
@@ -315,4 +313,47 @@ footer {
 
 .social-links a:hover {
     color: #6a3093;
+}
+
+@media (max-width: 768px) {
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .sobre-mi-contenido {
+        flex-direction: column; 
+        gap: 2rem;
+    }
+
+
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    
+    section {
+        padding: 3rem 1rem;
+    }
+
+    #hero {
+        padding: 4rem 1rem;
+    }
+
+    .cta-button {
+        padding: 0.7rem 1.2rem;
+    }
 }
